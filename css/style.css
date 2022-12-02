@@ -1,0 +1,221 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(150, 158, 166);
+    display: grid;
+    place-items: center;
+
+}
+.container {
+    width: 35%;
+    height: auto;
+    padding: 10px;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 18px 50px -10px;
+    border-radius: 4px;
+   padding: 0 30px 10px 30px;
+}
+.container h1{
+    text-align: center;
+   font-family: Arial, Helvetica, sans-serif;
+   text-transform: capitalize;
+   margin: 10px;
+
+}
+.container .view_image {
+    display: flex;
+    justify-content: center;
+    
+}
+.view_image img{
+    padding: 4px;
+    width: 300px;
+    height: 300px;
+
+
+}
+.disabled .view_image{
+    pointer-events: none;
+    opacity: .4;
+}
+.choose_image
+{
+    display: grid;
+    place-items: center;
+}
+.choose_image button
+{
+    font-size: 1rem;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   border-radius: 5px;
+   border: none;
+   outline: none;
+   background-color: rgba(0, 0, 0, 0.293);
+   cursor: pointer;
+   color: rgb(11, 16, 3);
+   padding: 5px;
+   margin: 10px;
+
+}
+.choose_image button img{
+    width: 35px;
+}
+.slider{
+    width: 100%;
+    position: relative;
+    padding: 10px;
+    margin: 5px;
+    border: .5px solid grey;
+}
+.slider input[type=range]
+{
+    width: 100%;
+    opacity: .7;
+
+}
+.disabled .slider{
+    pointer-events: none;
+    opacity: .4;
+}
+
+.filter_info{
+    font-size: 1rem;
+    display: flex;
+    justify-content: space-between;
+    text-transform: capitalize;
+    font-family: sans-serif;
+    padding-bottom: 5px;
+}
+.disabled .icons_filter{
+    pointer-events: none;
+    opacity: .4;
+}
+.icons_filter{
+    border: .5px solid grey;
+    /* margin: 5px 0px 5px 5px; */
+    margin: 15px;
+    
+}
+.icons_filter p{
+    text-transform: capitalize;
+    font-size: 1rem;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 10px;
+}
+.icons_filter .icons_room{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    
+}
+.icons_filter .icons_room button{
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    margin: 0 5px 5px;
+}
+.icons_filter .icons_room button img{
+    width: 30px;
+}
+
+#icons_room1 button:last-child {
+    transform: rotate(90deg);
+}
+
+.active {
+    background-color:aquamarine!important;
+    padding: 3px;
+    border-radius: 50%;
+}
+.btn_info button{
+    padding: 12px;
+    border-radius:5px;
+    border: none;
+    
+}
+.btn_info{
+    display: flex;
+    justify-content: space-between;
+    margin: 10px;
+}
+.disabled .btn_info{
+    pointer-events: none;
+    opacity: .4;
+}
+.btn_info button:first-child{
+    background-color: rgba(0, 0, 0, 0.182);
+    cursor: pointer;
+    font-size: 1rem;
+}
+.btn_info button:first-child:hover
+{
+    background-color: rgba(0, 0, 0, 0.342);
+    transition-duration: 300ms;
+}
+.btn_info button:last-child
+{
+    background-color:rgba(0, 0, 0, 0.182);
+    font-size: 1rem;
+    cursor: pointer;
+}
+.btn_info button:last-child:hover{
+    background-color: rgba(0, 0, 0, 0.29);
+    transition-duration: 300ms;
+}
+.disabled .tools {
+    opacity: .5;
+    pointer-events: none;
+}
+.tools .w_h{
+    border: .5px solid grey;
+        margin: 15px;
+        display: flex;
+        padding: 7px;
+}
+.tools .w_h ._input {
+    display: flex;
+    justify-content: center;
+    align-items: left;
+    flex-direction: column;
+    width: 50%;
+    /* margin: 0 10px; */
+    text-transform: capitalize;
+}
+._input input {
+    height: 25px;
+    width: 90%;
+    padding: 0 10px;
+    margin-top: 4px;
+    outline: none;
+    border: 2px solid rgba(0, 0, 0, 0.452);
+    border-radius: 4px;
+    opacity: .5;
+}
+._input label {
+    font-size: 1rem;
+    font-family: sans-serif;
+}
+.checked_tools {
+    margin-top: 15px;
+}
+
+.checked_tools ._ratio input[type="checkbox"] {
+    transform: scale(1.3);
+    opacity: .5;
+}
+@media (max-width:1450px) {
+    .container {
+        width: 55%;
+    }
+}
+@media (max-width:1000px) {
+    .container {
+        width: 65%;
+    }
+}

@@ -1,0 +1,95 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photo Editor App</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container disabled" >
+        <h1 class="h1">Photo Editor</h1>
+        <hr class="hr" />
+        <div class="view_image">
+            <img src="image/one.png" alt="">
+        </div>
+        <div class="choose_image">
+            <button>Choose Image <img src="image/upload.png" alt=""></button>
+            <input type="file" name="" id="" accept="image/*" hidden>
+        </div>
+
+        <div class="slider">
+            <div class="filter_info">
+                <span class="name">brightness</span>
+                <span class="value">100%</span>
+            </div>
+            <input type="range" name="" id="seek-bar" max="200" min="0">
+        </div>
+        <div class="icons_filter">
+            <p>filters</p>
+            <div class="icons_room" id="icons_room">
+                <button title="brightness" id="brightness" class="active"> 
+                    <img src="image/brightnss.png" alt="">
+                </button>
+                <button title="contrast" id="contrast">
+                    <img src="image/contrast.png" alt="">
+                </button>
+                <button title="saturate" id="saturate">
+                    <img src="image/saturate.png" alt="">
+                </button>
+                <button title="invert" id="invert">
+                    <img src="image/invert.png" alt="">
+                </button>
+                <button title="blur" id="blur">
+                    <img src="image/blur.png" alt="">
+                </button>
+            </div>
+        </div>
+        <div class="icons_filter">
+            <p>rotate & flip</p>
+            <div class="icons_room" id="icons_room1">
+                <button title="rotate_left" class="rotate_left" id="rotate_left">
+                    <img src="image/rotateleft.png" alt="">
+                </button>
+                <button title="rotate_right" class="rotate_right" id="rotate_right">
+                    <img src="image/rotateright.png" alt="">
+                </button>
+                <button title="flip_x" class="flip_x" id="flip_x">
+                    <img src="image/flip.png" alt="">
+                </button>
+                <button title="flip_y" class="flip_y" id="flip_y">
+                    <img src="image/flip.png" alt="">
+                </button>
+                
+            </div>
+        </div>
+        <div class="tools">
+            <div class="w_h">
+                <div class="_input">
+                    <label for="width">Width</label>
+                    <input type="number" name="" id="width" value="0">
+                </div>
+                <div class="_input">
+                    <label for="height">height</label>
+                    <input type="number" name="" id="height" value="0">
+                </div>
+            </div>
+            <div class="checked_tools">
+                <div class="_ratio">
+                    <input type="checkbox" name="" id="aspect">
+                    <label for="aspect">Lock Aspect Ratio</label>
+                </div>
+               
+                <div class="_ratio">
+                    <input type="checkbox" name="" id="reduce">
+                    <label for="reduce">Reduce Quality</label>
+                </div>
+            </div>
+                <div class="btn_info">
+                    <button class="reset">Reset filter</button>
+                    <button class="save">Save Image</button>
+                </div>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+</html>
