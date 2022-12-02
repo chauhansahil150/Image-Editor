@@ -211,11 +211,11 @@ body {
 }
 @media (max-width:1450px) {
     .container {
-        width: 55%;
+        width: 90%;
     }
 }
 @media (max-width:1000px) {
     .container {
-        width: 65%;
+        width: 90%;
     }
 }
