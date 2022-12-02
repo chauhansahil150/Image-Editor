@@ -10,7 +10,6 @@ let reset = document.querySelector(".reset");
 let save = document.querySelector(".save");
 let imgWidth = document.getElementById('width');
 let imgHeight = document.getElementById('height');
-let reduce = document.getElementById('reduce');
 let aspect = document.getElementById('aspect');
 
 
@@ -161,11 +160,10 @@ save.addEventListener("click", () => {
     ctx.scale(flip_x, flip_y);
 
     // reduce quality
-    let reduce_qual = reduce.checked ? .5 : 1.0;
     ctx.drawImage(view_image_btn, 0, 0, canvas.width, canvas.height);
     const link = document.createElement("a");
     link.download = new Date().getTime();
-    link.href = canvas.toDataURL('image/*',reduce_qual);
+    link.href = canvas.toDataURL('image/*');
     link.click();
 
 });
