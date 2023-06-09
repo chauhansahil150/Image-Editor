@@ -1,4 +1,5 @@
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -6,15 +7,16 @@
     <title>Photo Editor App</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
-    <div class="container disabled" >
+    <div class="container disabled">
         <h1 class="h1">Photo Editor</h1>
         <hr class="hr" />
         <div class="view_image">
             <img src="image/one.png" alt="">
         </div>
         <div class="choose_image">
-            <button>Choose Image <img src="image/upload.png" alt=""></button>
+            <button>Select Image <img src="image/upload.png" alt=""></button>
             <input type="file" name="" id="" accept="image/*" hidden>
         </div>
 
@@ -28,7 +30,7 @@
         <div class="icons_filter">
             <p>filters</p>
             <div class="icons_room" id="icons_room">
-                <button title="brightness" id="brightness" class="active"> 
+                <button title="brightness" id="brightness" class="active">
                     <img src="image/brightnss.png" alt="">
                 </button>
                 <button title="contrast" id="contrast">
@@ -60,7 +62,7 @@
                 <button title="flip_y" class="flip_y" id="flip_y">
                     <img src="image/flip.png" alt="">
                 </button>
-                
+
             </div>
         </div>
         <div class="tools">
@@ -79,13 +81,14 @@
                     <input type="checkbox" name="" id="aspect">
                     <label for="aspect">Lock Aspect Ratio</label>
                 </div>
-               
+
             </div>
-                <div class="btn_info">
-                    <button class="reset">Reset filter</button>
-                    <button class="save">Save Image</button>
-                </div>
-    </div>
-    <script src="js/script.js"></script>
+            <div class="btn_info">
+                <button class="reset">Reset filter</button>
+                <button class="save">Save Image</button>
+            </div>
+        </div>
+        <script src="js/script.js"></script>
 </body>
+
 </html>
